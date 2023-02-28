@@ -3,49 +3,36 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 ---
 
-<BaseLayout title = "Projects">
+<BaseLayout title="Projects">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5">Antibiotic Resistance</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="Antibiotic Resistance in the Dominican Republic II"
+    img="/post_research_1.svg"
+    desc="In the present study, our research team analyzed superficial water samples from 3 different collection sites along the Ozama River, the most important river in the Dominican metropolitan area."
+    url="https://www.biorxiv.org/content/10.1101/2022.09.19.508624v1"
     badge="NEW"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="We have an antibiotic resistance issue in the DR..."
+    img="/post_research_1.svg"
+    desc="Fifteen isolates were selected for genome sequencing and analysis. Most isolates were resistant to at least three different families of antibiotics. Among beta-lactamase genes encountered, we found the presence of blaTEM, blaOXA, blaSHV, and blaKPC through both deep sequencing and PCR amplification."
+    url="https://www.frontiersin.org/articles/10.3389/fmicb.2020.519169/full"
+    badge="Yikes"
   />
 
   <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Deep Learning</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 4"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 5"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="Deep Learning and Multi-Omics? Sure why not"
+    img="/post_research_3.svg"
+    desc="In this paper, we compared the performance of different deep learning autoencoders for cancer subtype detection. We performed cancer subtype detection on four different cancer types from The Cancer Genome Atlas (TCGA) datasets using four autoencoder implementations."
+    url="https://pubmed.ncbi.nlm.nih.gov/33921978/"
+    badge="COOL"
   />
 </BaseLayout>
