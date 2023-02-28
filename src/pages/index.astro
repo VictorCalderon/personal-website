@@ -12,21 +12,28 @@ const last_posts = posts.slice(0, 3);
 
 <BaseLayout>
   <div class="pb-12 mt-5">
-    <div class="text-xl py-1">Hello there</div>
-    <div class="text-5xl font-bold">I'm Víctor Calderón</div>
-    <div class="text-3xl py-3 font-normal">
+    <div class="text-xl py-3 text-center md:text-start text-neutral-400">
+      Hello there
+    </div>
+    <div class="text-5xl font-bold text-center md:text-start">
+      I'm Víctor Calderón
+    </div>
+    <div
+      class="text-3xl py-3 font-normal text-center md:text-start text-neutral-700"
+    >
       Researcher, Software Engineer and Future Husband
     </div>
     <div class="py-2">
-      <text class="text-lg">
+      <p class="text-lg text-justify">
         I made this website to share all of the things that I'm working on, and
         also to have a single place to share my projects, services and ideas. I
         hope you find it useful! In here you will find my latest software
         projects, my latest research and some of my courses. By the way, the
         gorgeous woman by my side is my future wife.
-      </text>
+      </p>
     </div>
-    <div class="mt-8">
+
+    <div class="mt-8 flex flex-row justify-center md:justify-start">
       <a class="btn" href="https://twitter.com/victocalderon" target="_blank">
         Let's connect!</a
       >
@@ -41,31 +48,34 @@ const last_posts = posts.slice(0, 3);
   </div>
 
   <div>
-    <div class="text-3xl w-full font-bold mb-2">My latest projects {"</>"}</div>
+    <div class="text-3xl w-full font-bold mb-5 text-center md:text-start">
+      My latest projects {"</>"}
+    </div>
   </div>
 
-  <HorizontalCard
-    title="Antibiotic Resistance in the Dominican Republic II"
-    img="/post_research_1.svg"
-    desc="In the present study, our research team analyzed superficial water samples from 3 different collection sites along the Ozama River, the most important river in the Dominican metropolitan area."
-    url="https://www.biorxiv.org/content/10.1101/2022.09.19.508624v1"
-    badge="NEW"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Even Deadlier SARS-CoV-2 in the island"
-    img="/post_research_2.svg"
-    desc="Here, we report nearly complete genome sequences for three samples of two SARSCoV-2 variants circulating in the DR. Libraries were prepared according to the third iteration of the Artic Network protocol on SARS-CoV2 for Oxford Nanopore Sequencing."
-    url="https://cris.unibe.edu.do/bitstream/123456789/207/1/MRA.00744-21.pdf"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Deep Learning and Multi-Omics? Sure why not"
-    img="/post_research_3.svg"
-    desc="In this paper, we compared the performance of different deep learning autoencoders for cancer subtype detection. We performed cancer subtype detection on four different cancer types from The Cancer Genome Atlas (TCGA) datasets using four autoencoder implementations."
-    url="https://pubmed.ncbi.nlm.nih.gov/33921978/"
-    badge="COOL"
-  />
+  <div class="flex flex-col space-y-4">
+    <HorizontalCard
+      title="Antibiotic Resistance in the Dominican Republic II"
+      img="/post_research_1.svg"
+      desc="In the present study, our research team analyzed superficial water samples from 3 different collection sites along the Ozama River, the most important river in the Dominican metropolitan area."
+      url="https://www.biorxiv.org/content/10.1101/2022.09.19.508624v1"
+      badge="NEW"
+    />
+    <HorizontalCard
+      title="Even Deadlier SARS-CoV-2 in the island"
+      img="/post_research_2.svg"
+      desc="Here, we report nearly complete genome sequences for three samples of two SARSCoV-2 variants circulating in the DR. Libraries were prepared according to the third iteration of the Artic Network protocol on SARS-CoV2 for Oxford Nanopore Sequencing."
+      url="https://cris.unibe.edu.do/bitstream/123456789/207/1/MRA.00744-21.pdf"
+    />
+    <HorizontalCard
+      title="Deep Learning and Multi-Omics? Sure why not"
+      img="/post_research_3.svg"
+      desc="In this paper, we compared the performance of different deep learning autoencoders for cancer subtype detection. We performed cancer subtype detection on four different cancer types from The Cancer Genome Atlas (TCGA) datasets using four autoencoder implementations."
+      url="https://pubmed.ncbi.nlm.nih.gov/33921978/"
+      badge="COOL"
+    />
+  </div>
+
   <!-- 
   <div>
     <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>

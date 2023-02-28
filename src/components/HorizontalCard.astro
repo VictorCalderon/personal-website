@@ -3,16 +3,18 @@ const { title, img, desc, url, badge, tags, target = "_blank" } = Astro.props;
 ---
 
 <div
-  class="rounded-lg bg-base-100 hover:shadow-xl transition ease-in-out hover:scale-[102%] relative -left-4"
+  class="rounded-lg bg-base-100 hover:shadow-xl transition ease-in-out hover:scale-[102%] my-2"
 >
   <a href={url} target={target}>
-    <div class="hero-content flex-col md:flex-row">
+    <div
+      class="hero-content flex-col md:flex-row bg-base-300 rounded-lg bg-opacity-30"
+    >
       {
         img && (
           <img
             src={img}
             alt={title}
-            class="max-w-full md:max-w-[13rem] max-h-[10rem] min-w-[13rem] rounded-lg bg-base-200"
+            class="max-w-full md:max-w-[13rem] max-h-[10rem] min-w-[13rem] rounded-lg w-full"
           />
         )
       }
